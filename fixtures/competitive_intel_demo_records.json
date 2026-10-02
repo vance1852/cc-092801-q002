@@ -1,0 +1,280 @@
+{
+  "records": [
+    {
+      "record_id": "rec-int-0471",
+      "source": "internal_ldm",
+      "display_name": "PROJ-NIGHTINGALE",
+      "organization": "本公司",
+      "origin": "internal",
+      "sensitivity": "sensitive",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "patient_segments": ["CRP升高", "抗TNF经治"],
+        "combination": ["单药"],
+        "line_of_therapy": ["2L"],
+        "endpoints": ["临床缓解率"],
+        "biomarker_strategy": ["富集入组"],
+        "route": ["静脉输注"]
+      },
+      "stage": "phase_2",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-int-pkpd-0471",
+          "experiment_type": "PK/PD",
+          "version": "v1.2",
+          "result_summary": "食蟹猴 PK/PD 模型支持两周一次给药，靶标占有率 >90%",
+          "observed_at": "2025-06-01"
+        },
+        {
+          "experiment_version_id": "exp-int-poc-0471",
+          "experiment_type": "PoC",
+          "version": "v2.0",
+          "result_summary": "剂量扩展队列第 12 周临床缓解率 31%，安慰剂组 12%",
+          "observed_at": "2026-03-15"
+        }
+      ],
+      "timeline": [
+        {"event_type": "trial_started", "event_date": "2025-09-01", "summary": "全球 II 期首例入组", "source_ref": "internal://ctms/NG-P2-01"},
+        {"event_type": "trial_update", "event_date": "2026-04-02", "summary": "II 期中期数据在内部研发委员会汇报", "source_ref": "internal://minutes/2026-04-02"}
+      ],
+      "evidence_tier": "conference",
+      "evidence_refs": ["internal://ctms/NG-P2-01", "internal://reports/poc-v2"],
+      "notes": "公司重点敏感项目，代号与实验细节限投决与审计角色"
+    },
+    {
+      "record_id": "rec-ext-0922",
+      "source": "conference_abstract",
+      "display_name": "合作伙伴会议摘要中的 TL1A 项目",
+      "organization": "海岸临床中心",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "patient_segments": ["CRP升高"],
+        "combination": ["单药"],
+        "line_of_therapy": ["2L"],
+        "endpoints": ["临床缓解率"],
+        "route": ["静脉输注"]
+      },
+      "stage": "phase_2",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-cover-abstract",
+          "experiment_type": "clinical_abstract",
+          "version": "2026-DDW-2241",
+          "result_summary": "会议摘要披露 II 期中期缓解率数据，与内部项目同源",
+          "observed_at": "2026-05-18"
+        }
+      ],
+      "timeline": [
+        {"event_type": "disclosed", "event_date": "2026-05-18", "summary": "合作伙伴在消化会议披露摘要 2241", "source_ref": "https://example.org/abstract/2241"}
+      ],
+      "evidence_tier": "conference",
+      "evidence_refs": ["https://example.org/abstract/2241"],
+      "notes": "经核实与 rec-int-0471 为同一项目的对外披露"
+    },
+    {
+      "record_id": "rec-alpha-614",
+      "source": "trial_registry",
+      "display_name": "ALPHA-614",
+      "organization": "阿尔法生物",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎", "克罗恩病"],
+      "clinical_attributes": {
+        "patient_segments": ["生物标志物初治"],
+        "combination": ["单药"],
+        "line_of_therapy": ["1L", "2L"],
+        "endpoints": ["临床缓解率", "内镜缓解率"],
+        "biomarker_strategy": ["全人群"],
+        "route": ["皮下注射"]
+      },
+      "stage": "phase_3",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-alpha-p3-v1",
+          "experiment_type": "phase3_readout",
+          "version": "v1.0",
+          "result_summary": "UC III 期顶线达到主要终点，缓解率 40% 对 15%",
+          "observed_at": "2026-06-30"
+        }
+      ],
+      "timeline": [
+        {"event_type": "trial_started", "event_date": "2024-02-01", "summary": "UC III 期启动", "source_ref": "https://example.org/trial/alpha614-uc"},
+        {"event_type": "trial_readout", "event_date": "2026-06-30", "summary": "UC III 期顶线阳性", "source_ref": "https://example.org/pr/alpha-614-topline"}
+      ],
+      "evidence_tier": "peer_reviewed",
+      "evidence_refs": ["https://example.org/trial/alpha614-uc", "https://example.org/pr/alpha-614-topline"]
+    },
+    {
+      "record_id": "rec-zeta-7",
+      "source": "company_pipeline",
+      "display_name": "ZETA-7",
+      "organization": "泽塔制药",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "patient_segments": ["抗TNF经治"],
+        "combination": ["联合用药"],
+        "line_of_therapy": ["3L"],
+        "endpoints": ["内镜缓解率"],
+        "route": ["静脉输注"]
+      },
+      "stage": "phase_2",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-zeta-p2-v1",
+          "experiment_type": "phase2_readout",
+          "version": "v1.1",
+          "result_summary": "II 期联用方案内镜缓解率 28%",
+          "observed_at": "2026-02-20"
+        }
+      ],
+      "timeline": [
+        {"event_type": "trial_started", "event_date": "2025-03-10", "summary": "II 期联用研究启动", "source_ref": "https://example.org/trial/zeta7"},
+        {"event_type": "trial_readout", "event_date": "2026-02-20", "summary": "II 期数据发布", "source_ref": "https://example.org/pr/zeta7-p2"}
+      ],
+      "evidence_tier": "peer_reviewed",
+      "evidence_refs": ["https://example.org/pr/zeta7-p2"]
+    },
+    {
+      "record_id": "rec-gamma-331",
+      "source": "conference_abstract",
+      "display_name": "GAMMA-331",
+      "organization": "伽玛生物",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "patient_segments": ["生物标志物初治"],
+        "combination": ["单药"],
+        "line_of_therapy": ["1L"],
+        "endpoints": ["安全性"],
+        "route": ["静脉输注"]
+      },
+      "stage": "phase_1",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-gamma-p1-v1",
+          "experiment_type": "phase1_readout",
+          "version": "v1.0",
+          "result_summary": "I 期爬坡未见剂量限制毒性",
+          "observed_at": "2026-01-12"
+        }
+      ],
+      "timeline": [
+        {"event_type": "trial_started", "event_date": "2025-11-01", "summary": "I 期首例入组", "source_ref": "https://example.org/trial/gamma331"},
+        {"event_type": "trial_update", "event_date": "2026-01-12", "summary": "I 期安全性数据公布", "source_ref": "https://example.org/pr/gamma331"}
+      ],
+      "evidence_tier": "conference",
+      "evidence_refs": ["https://example.org/pr/gamma331"]
+    },
+    {
+      "record_id": "rec-delta-rumor",
+      "source": "industry_newsletter",
+      "display_name": "传闻中的德尔达 TL1A 项目",
+      "organization": "德尔达制药",
+      "origin": "external",
+      "sensitivity": "restricted",
+      "target": "TL1A",
+      "mechanism": "TL1A 中和抗体",
+      "modalities": ["单克隆抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "combination": ["单药"],
+        "line_of_therapy": ["2L"],
+        "route": ["静脉输注"]
+      },
+      "stage": "phase_1",
+      "experiments": [],
+      "timeline": [
+        {"event_type": "disclosed", "event_date": "2025-01-20", "summary": "行业通讯称该公司在推进 TL1A 抗体", "source_ref": "newsletter://tracker/2025-01-20"}
+      ],
+      "evidence_tier": "rumor",
+      "evidence_refs": ["newsletter://tracker/2025-01-20"],
+      "notes": "未经公司确认，仅作情报线索"
+    },
+    {
+      "record_id": "rec-beta-smol",
+      "source": "preprint_server",
+      "display_name": "BETA-SMOL",
+      "organization": "贝塔制药",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 小分子拮抗剂",
+      "modalities": ["小分子"],
+      "indications": ["克罗恩病"],
+      "clinical_attributes": {
+        "patient_segments": ["生物标志物初治"],
+        "combination": ["单药"],
+        "line_of_therapy": ["2L"],
+        "endpoints": ["临床缓解率"],
+        "route": ["口服"]
+      },
+      "stage": "phase_2",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-beta-p2-v1",
+          "experiment_type": "phase2_readout",
+          "version": "v1.0",
+          "result_summary": "口服小分子 II 期中期缓解率 24%",
+          "observed_at": "2026-05-09"
+        }
+      ],
+      "timeline": [
+        {"event_type": "trial_started", "event_date": "2025-05-01", "summary": "小分子 II 期启动", "source_ref": "https://example.org/trial/betasmol"},
+        {"event_type": "trial_update", "event_date": "2026-05-09", "summary": "II 期中期数据上预印本", "source_ref": "https://example.org/preprint/beta-smol"}
+      ],
+      "evidence_tier": "peer_reviewed",
+      "evidence_refs": ["https://example.org/preprint/beta-smol"]
+    },
+    {
+      "record_id": "rec-epsilon-bi",
+      "source": "company_press",
+      "display_name": "EPSILON-BI",
+      "organization": "艾普西龙生物",
+      "origin": "external",
+      "sensitivity": "public",
+      "target": "TL1A",
+      "mechanism": "TL1A 双功能中和",
+      "modalities": ["双特异性抗体"],
+      "indications": ["溃疡性结肠炎"],
+      "clinical_attributes": {
+        "combination": ["单药"],
+        "route": ["静脉输注"]
+      },
+      "stage": "preclinical",
+      "experiments": [
+        {
+          "experiment_version_id": "exp-epsilon-pkg-v1",
+          "experiment_type": "preclinical",
+          "version": "v0.9",
+          "result_summary": "双抗在人源化小鼠中显示活性",
+          "observed_at": "2025-12-01"
+        }
+      ],
+      "timeline": [
+        {"event_type": "disclosed", "event_date": "2025-12-10", "summary": "新闻稿宣布双抗项目进入 IND enabling", "source_ref": "https://example.org/pr/epsilon-bi"}
+      ],
+      "evidence_tier": "press_release",
+      "evidence_refs": ["https://example.org/pr/epsilon-bi"]
+    }
+  ]
+}
